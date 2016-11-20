@@ -1020,7 +1020,7 @@ namespace C3Mod
         {
           if (!int.TryParse(args.Parameters[1], out page) || (page < 1))
           {
-            args.Player.SendMessage(string.Format("Invalid page number ({0})", page), Color.Red);
+            args.Player.SendMessage($"Invalid page number ({page})", Color.Red);
             return;
           }
           page--;
@@ -1039,11 +1039,11 @@ namespace C3Mod
               int pagecount = arenas.Count / pagelimit;
               if (page > pagecount)
               {
-                args.Player.SendMessage(string.Format("Page number exceeds pages ({0}/{1})", page + 1, pagecount + 1),
+                args.Player.SendMessage($"Page number exceeds pages ({page + 1}/{pagecount + 1})",
                   Color.Red);
                 return;
               }
-              args.Player.SendMessage(string.Format("Current Arenas ({0}/{1}):", page + 1, pagecount + 1), Color.Green);
+              args.Player.SendMessage($"Current Arenas ({page + 1}/{pagecount + 1}):", Color.Green);
               var nameslist = new List<string>();
               for (int i = page * pagelimit; (i < page * pagelimit + pagelimit) && (i < arenas.Count); i++)
                 nameslist.Add(arenas[i].Name + ": " + (i + 1));
@@ -1051,7 +1051,7 @@ namespace C3Mod
               for (var i = 0; i < names.Length; i += perline)
                 args.Player.SendMessage(string.Join(", ", names, i, Math.Min(names.Length - i, perline)), Color.Yellow);
               if (page < pagecount)
-                args.Player.SendMessage(string.Format("Type /list ctf {0} for more regions.", page + 2), Color.Yellow);
+                args.Player.SendMessage($"Type /list ctf {page + 2} for more regions.", Color.Yellow);
               break;
             }
           case "oneflag":
@@ -1065,11 +1065,11 @@ namespace C3Mod
               int pagecount = arenas.Count / pagelimit;
               if (page > pagecount)
               {
-                args.Player.SendMessage(string.Format("Page number exceeds pages ({0}/{1})", page + 1, pagecount + 1),
+                args.Player.SendMessage($"Page number exceeds pages ({page + 1}/{pagecount + 1})",
                   Color.Red);
                 return;
               }
-              args.Player.SendMessage(string.Format("Current Arenas ({0}/{1}):", page + 1, pagecount + 1), Color.Green);
+              args.Player.SendMessage($"Current Arenas ({page + 1}/{pagecount + 1}):", Color.Green);
               var nameslist = new List<string>();
               for (int i = page * pagelimit; (i < page * pagelimit + pagelimit) && (i < arenas.Count); i++)
                 nameslist.Add(arenas[i].Name + ": " + (i + 1));
@@ -1077,7 +1077,7 @@ namespace C3Mod
               for (var i = 0; i < names.Length; i += perline)
                 args.Player.SendMessage(string.Join(", ", names, i, Math.Min(names.Length - i, perline)), Color.Yellow);
               if (page < pagecount)
-                args.Player.SendMessage(string.Format("Type /list oneflag {0} for more regions.", page + 2), Color.Yellow);
+                args.Player.SendMessage($"Type /list oneflag {page + 2} for more regions.", Color.Yellow);
               break;
             }
           case "ffa":
@@ -1091,11 +1091,11 @@ namespace C3Mod
               int pagecount = arenas.Count / pagelimit;
               if (page > pagecount)
               {
-                args.Player.SendMessage(string.Format("Page number exceeds pages ({0}/{1})", page + 1, pagecount + 1),
+                args.Player.SendMessage($"Page number exceeds pages ({page + 1}/{pagecount + 1})",
                   Color.Red);
                 return;
               }
-              args.Player.SendMessage(string.Format("Current Arenas ({0}/{1}):", page + 1, pagecount + 1), Color.Green);
+              args.Player.SendMessage($"Current Arenas ({page + 1}/{pagecount + 1}):", Color.Green);
               var nameslist = new List<string>();
               for (int i = page * pagelimit; (i < page * pagelimit + pagelimit) && (i < arenas.Count); i++)
                 nameslist.Add(arenas[i].Name + ": " + (i + 1));
@@ -1103,7 +1103,7 @@ namespace C3Mod
               for (var i = 0; i < names.Length; i += perline)
                 args.Player.SendMessage(string.Join(", ", names, i, Math.Min(names.Length - i, perline)), Color.Yellow);
               if (page < pagecount)
-                args.Player.SendMessage(string.Format("Type /list ffa {0} for more regions.", page + 2), Color.Yellow);
+                args.Player.SendMessage($"Type /list ffa {page + 2} for more regions.", Color.Yellow);
               break;
             }
           case "tdm":
@@ -1117,11 +1117,11 @@ namespace C3Mod
               int pagecount = arenas.Count / pagelimit;
               if (page > pagecount)
               {
-                args.Player.SendMessage(string.Format("Page number exceeds pages ({0}/{1})", page + 1, pagecount + 1),
+                args.Player.SendMessage($"Page number exceeds pages ({page + 1}/{pagecount + 1})",
                   Color.Red);
                 return;
               }
-              args.Player.SendMessage(string.Format("Current Arenas ({0}/{1}):", page + 1, pagecount + 1), Color.Green);
+              args.Player.SendMessage($"Current Arenas ({page + 1}/{pagecount + 1}):", Color.Green);
               var nameslist = new List<string>();
               for (int i = page * pagelimit; (i < page * pagelimit + pagelimit) && (i < arenas.Count); i++)
                 nameslist.Add(arenas[i].Name + ": " + (i + 1));
@@ -1129,7 +1129,7 @@ namespace C3Mod
               for (var i = 0; i < names.Length; i += perline)
                 args.Player.SendMessage(string.Join(", ", names, i, Math.Min(names.Length - i, perline)), Color.Yellow);
               if (page < pagecount)
-                args.Player.SendMessage(string.Format("Type /list tdm {0} for more regions.", page + 2), Color.Yellow);
+                args.Player.SendMessage($"Type /list tdm {page + 2} for more regions.", Color.Yellow);
               break;
             }
           case "duel":
@@ -1143,11 +1143,11 @@ namespace C3Mod
               int pagecount = arenas.Count / pagelimit;
               if (page > pagecount)
               {
-                args.Player.SendMessage(string.Format("Page number exceeds pages ({0}/{1})", page + 1, pagecount + 1),
+                args.Player.SendMessage($"Page number exceeds pages ({page + 1}/{pagecount + 1})",
                   Color.Red);
                 return;
               }
-              args.Player.SendMessage(string.Format("Current Arenas ({0}/{1}):", page + 1, pagecount + 1), Color.Green);
+              args.Player.SendMessage($"Current Arenas ({page + 1}/{pagecount + 1}):", Color.Green);
               var nameslist = new List<string>();
               for (int i = page * pagelimit; (i < page * pagelimit + pagelimit) && (i < arenas.Count); i++)
                 nameslist.Add(arenas[i].Name + ": " + (i + 1));
@@ -1155,7 +1155,7 @@ namespace C3Mod
               for (var i = 0; i < names.Length; i += perline)
                 args.Player.SendMessage(string.Join(", ", names, i, Math.Min(names.Length - i, perline)), Color.Yellow);
               if (page < pagecount)
-                args.Player.SendMessage(string.Format("Type /list duel {0} for more regions.", page + 2), Color.Yellow);
+                args.Player.SendMessage($"Type /list duel {page + 2} for more regions.", Color.Yellow);
               break;
             }
           default:
