@@ -61,21 +61,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else if (playerteam2 > playerteam1)
@@ -86,21 +80,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else
@@ -116,21 +104,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor1)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -141,21 +123,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor2)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -193,21 +169,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else if (blueteamplayers > redteamplayers)
@@ -217,21 +187,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else
@@ -247,21 +211,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor1)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -272,21 +230,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor2)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -324,21 +276,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else if (blueteamplayers > redteamplayers)
@@ -348,21 +294,15 @@ namespace C3Mod
                 switch (C3Mod.C3Config.TeamColor1)
                 {
                   case 1:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 2:
-                    {
-                      return "Green";
-                    }
+                    return "Green";
                   case 3:
-                    {
-                      return "Blue";
-                    }
+                    return "Blue";
                   case 4:
-                    {
-                      return "Yellow";
-                    }
+                    return "Yellow";
+                  case 5:
+                    return "Pink";
                 }
               }
               else
@@ -378,21 +318,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor1)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -403,21 +337,15 @@ namespace C3Mod
                       switch (C3Mod.C3Config.TeamColor2)
                       {
                         case 1:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 2:
-                          {
-                            return "Green";
-                          }
+                          return "Green";
                         case 3:
-                          {
-                            return "Blue";
-                          }
+                          return "Blue";
                         case 4:
-                          {
-                            return "Yellow";
-                          }
+                          return "Yellow";
+                        case 5:
+                          return "Pink";
                       }
                       break;
                     }
@@ -432,12 +360,12 @@ namespace C3Mod
       return "";
     }
 
-    /// <summary>
-    /// Broadcasts a message to all players in a running gametype
-    /// </summary>
-    /// <param name="gametype">"ctf","tdm","1v1","oneflag","ffa","apoc"</param>
-    /// <param name="message"></param>
-    /// <param name="color"></param>
+    //// <summary>
+    //// Broadcasts a message to all players in a running gametype
+    //// </summary>
+    //// <param name="gametype">"ctf","tdm","1v1","oneflag","ffa","apoc"</param>
+    //// <param name="message"></param>
+    //// <param name="color"></param>
     public static void BroadcastMessageToGametype(string gametype, string message, Color color)
     {
       foreach (C3Player player in C3Mod.C3Players)

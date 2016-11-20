@@ -19,28 +19,48 @@ namespace C3Mod
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempflags[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
 
-      if (C3Mod.C3Config.TeamColor1 == 1)
-        args.Player.SendMessage("Temporary CTF Red flag set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor1 == 2)
-        args.Player.SendMessage("Temporary CTF Green flag set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor1 == 3)
-        args.Player.SendMessage("Temporary CTF Blue flag set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor1 == 4)
-        args.Player.SendMessage("Temporary CTF Yellow flag set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor1)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary CTF Red flag set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary CTF Green flag set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary CTF Blue flag set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary CTF Yellow flag set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary CTF Pink flag set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetCTFTeam2Flag(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempflags[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor2 == 1)
-        args.Player.SendMessage("Temporary CTF Red flag set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor2 == 2)
-        args.Player.SendMessage("Temporary CTF Green flag set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor2 == 3)
-        args.Player.SendMessage("Temporary CTF Blue flag set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor2 == 4)
-        args.Player.SendMessage("Temporary CTF Yellow flag set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor2)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary CTF Red flag set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary CTF Green flag set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary CTF Blue flag set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary CTF Yellow flag set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary CTF Pink flag set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetCTFTeam1Spawn(CommandArgs args)
@@ -48,14 +68,24 @@ namespace C3Mod
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
 
-      if (C3Mod.C3Config.TeamColor1 == 1)
-        args.Player.SendMessage("Temporary CTF Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor1 == 2)
-        args.Player.SendMessage("Temporary CTF Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor1 == 3)
-        args.Player.SendMessage("Temporary CTF Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor1 == 4)
-        args.Player.SendMessage("Temporary CTF Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor1)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary CTF Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary CTF Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary CTF Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary CTF Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary CTF Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetCTFTeam2Spawn(CommandArgs args)
@@ -63,14 +93,24 @@ namespace C3Mod
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
 
-      if (C3Mod.C3Config.TeamColor2 == 1)
-        args.Player.SendMessage("Temporary CTF Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor2 == 2)
-        args.Player.SendMessage("Temporary CTF Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor2 == 3)
-        args.Player.SendMessage("Temporary CTF Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor2 == 4)
-        args.Player.SendMessage("Temporary CTF Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor2)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary CTF Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary CTF Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary CTF Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary CTF Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary CTF Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void AddCTFArena(CommandArgs args)
@@ -136,28 +176,48 @@ namespace C3Mod
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor1 == 1)
-        args.Player.SendMessage("Temporary One Flag CTF Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor1 == 2)
-        args.Player.SendMessage("Temporary One Flag CTF Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor1 == 3)
-        args.Player.SendMessage("Temporary One Flag CTF Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor1 == 4)
-        args.Player.SendMessage("Temporary One Flag CTF Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor1)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary One Flag CTF Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary One Flag CTF Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary One Flag CTF Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary One Flag CTF Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary One Flag CTF Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetOneFlagTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor2 == 1)
-        args.Player.SendMessage("Temporary One Flag CTF Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor2 == 2)
-        args.Player.SendMessage("Temporary One Flag CTF Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor2 == 3)
-        args.Player.SendMessage("Temporary One Flag CTF Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor2 == 4)
-        args.Player.SendMessage("Temporary One Flag  CTF Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor2)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary One Flag CTF Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary One Flag CTF Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary One Flag CTF Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary One Flag CTF Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary One Flag CTF Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void AddOneFlagArena(CommandArgs args)
@@ -213,28 +273,48 @@ namespace C3Mod
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor1 == 1)
-        args.Player.SendMessage("Temporary Duel Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor1 == 2)
-        args.Player.SendMessage("Temporary Duel Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor1 == 3)
-        args.Player.SendMessage("Temporary Duel Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor1 == 4)
-        args.Player.SendMessage("Temporary Duel Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor1)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary Duel Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary Duel Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary Duel Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary Duel Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary Duel Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetDuelTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor2 == 1)
-        args.Player.SendMessage("Temporary Duel Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor2 == 2)
-        args.Player.SendMessage("Temporary Duel Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor2 == 3)
-        args.Player.SendMessage("Temporary Duel Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor2 == 4)
-        args.Player.SendMessage("Temporary Duel Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor2)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary Duel Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary Duel Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary Duel Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary Duel Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary Duel Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void AddDuelArena(CommandArgs args)
@@ -286,28 +366,48 @@ namespace C3Mod
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
       player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor1 == 1)
-        args.Player.SendMessage("Temporary TDM Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor1 == 2)
-        args.Player.SendMessage("Temporary TDM Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor1 == 3)
-        args.Player.SendMessage("Temporary TDM Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor1 == 4)
-        args.Player.SendMessage("Temporary TDM Yellow spawn set at your position", Color.LightYellow);
+      switch (C3Mod.C3Config.TeamColor1)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary TDM Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary TDM Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary TDM Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary TDM Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary TDM Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void SetTDMTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
-      if (C3Mod.C3Config.TeamColor2 == 1)
-        args.Player.SendMessage("Temporary TDM Red spawn set at your position", Color.OrangeRed);
-      else if (C3Mod.C3Config.TeamColor2 == 2)
-        args.Player.SendMessage("Temporary TDM Green spawn set at your position", Color.LightGreen);
-      else if (C3Mod.C3Config.TeamColor2 == 3)
-        args.Player.SendMessage("Temporary TDM Blue spawn set at your position", Color.LightBlue);
-      else if (C3Mod.C3Config.TeamColor2 == 4)
-        args.Player.SendMessage("Temporary TDM Yellow spawn set at your position", Color.LightYellow);
+      player.tempspawns[1] = new Vector2((int) args.Player.X / 16, (int) args.Player.Y / 16 + 3);
+      switch (C3Mod.C3Config.TeamColor2)
+      {
+        case 1:
+          args.Player.SendMessage("Temporary TDM Red spawn set at your position", Color.OrangeRed);
+          break;
+        case 2:
+          args.Player.SendMessage("Temporary TDM Green spawn set at your position", Color.Green);
+          break;
+        case 3:
+          args.Player.SendMessage("Temporary TDM Blue spawn set at your position", Color.Blue);
+          break;
+        case 4:
+          args.Player.SendMessage("Temporary TDM Yellow spawn set at your position", Color.Yellow);
+          break;
+        case 5:
+          args.Player.SendMessage("Temporary TDM Pink spawn set at your position", Color.Pink);
+          break;
+      }
     }
 
     public static void AddTDMArena(CommandArgs args)
@@ -563,132 +663,133 @@ namespace C3Mod
               int.TryParse(args.Parameters[1], out arena);
 
             //Gametype Divider
-            ///CTF
-            if (args.Parameters[0].ToLower() == "ctf")
-              if (C3Mod.C3Config.CTFEnabled)
-                if ((CTF.Arenas.Count > 0) && (CTF.Arenas.Count >= arena))
-                  if (!CTF.CTFGameRunning && !CTF.CTFGameCountdown)
-                  {
-                    CTF.flagPoints = CTF.Arenas[arena - 1].Flags;
-                    CTF.spawnPoints = CTF.Arenas[arena - 1].Spawns;
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Vote to play Capture the Flag started by: " + args.Player.Name, Color.Cyan);
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Type /join to join the lobby for this game! Arena: " + CTF.Arenas[arena - 1].Name, Color.Cyan);
-                    CTF.Team2Score = 0;
-                    CTF.Team1Score = 0;
-                    CTF.Team1FlagCarrier = null;
-                    CTF.Team2FlagCarrier = null;
-                    C3Mod.VoteType = "ctf";
-                    CTF.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
-                    C3Mod.VoteRunning = true;
-                  }
+            ////CTF
+            switch (args.Parameters[0].ToLower())
+            {
+              case "ctf":
+                if (C3Mod.C3Config.CTFEnabled)
+                  if ((CTF.Arenas.Count > 0) && (CTF.Arenas.Count >= arena))
+                    if (!CTF.CTFGameRunning && !CTF.CTFGameCountdown)
+                    {
+                      CTF.flagPoints = CTF.Arenas[arena - 1].Flags;
+                      CTF.spawnPoints = CTF.Arenas[arena - 1].Spawns;
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Vote to play Capture the Flag started by: " + args.Player.Name, Color.Cyan);
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Type /join to join the lobby for this game! Arena: " + CTF.Arenas[arena - 1].Name, Color.Cyan);
+                      CTF.Team2Score = 0;
+                      CTF.Team1Score = 0;
+                      CTF.Team1FlagCarrier = null;
+                      CTF.Team2FlagCarrier = null;
+                      C3Mod.VoteType = "ctf";
+                      CTF.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
+                      C3Mod.VoteRunning = true;
+                    }
+                    else
+                      args.Player.SendMessage("Capture Flag game already running!", Color.DarkCyan);
                   else
-                    args.Player.SendMessage("Capture Flag game already running!", Color.DarkCyan);
+                    args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
                 else
-                  args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
-              else
-                args.Player.SendMessage("Capture Flag disabled on this server", Color.DarkCyan);
-            //Gametype Divider
-            ///One Flag
-            else if (args.Parameters[0].ToLower() == "oneflag")
-              if (C3Mod.C3Config.OneFlagEnabled)
-                if ((OneFlagCTF.Arenas.Count > 0) && (OneFlagCTF.Arenas.Count >= arena))
-                  if (!OneFlagCTF.OneFlagGameRunning && !OneFlagCTF.OneFlagGameCountdown)
-                  {
-                    OneFlagCTF.FlagPoint = OneFlagCTF.Arenas[arena - 1].Flag;
-                    OneFlagCTF.SpawnPoint = OneFlagCTF.Arenas[arena - 1].Spawns;
-                    C3Tools.BroadcastMessageToGametype("", "Vote to play One Flag CTF started by: " + args.Player.Name,
-                      Color.Cyan);
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Type /join to join the lobby for this game! Arena: " + OneFlagCTF.Arenas[arena - 1].Name,
-                      Color.Cyan);
-                    OneFlagCTF.Team2Score = 0;
-                    OneFlagCTF.Team1Score = 0;
-                    OneFlagCTF.FlagCarrier = null;
-                    C3Mod.VoteType = "oneflag";
-                    OneFlagCTF.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
-                    C3Mod.VoteRunning = true;
-                  }
+                  args.Player.SendMessage("Capture Flag disabled on this server", Color.DarkCyan);
+                break;
+              case "oneflag":
+                if (C3Mod.C3Config.OneFlagEnabled)
+                  if ((OneFlagCTF.Arenas.Count > 0) && (OneFlagCTF.Arenas.Count >= arena))
+                    if (!OneFlagCTF.OneFlagGameRunning && !OneFlagCTF.OneFlagGameCountdown)
+                    {
+                      OneFlagCTF.FlagPoint = OneFlagCTF.Arenas[arena - 1].Flag;
+                      OneFlagCTF.SpawnPoint = OneFlagCTF.Arenas[arena - 1].Spawns;
+                      C3Tools.BroadcastMessageToGametype("", "Vote to play One Flag CTF started by: " + args.Player.Name,
+                        Color.Cyan);
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Type /join to join the lobby for this game! Arena: " + OneFlagCTF.Arenas[arena - 1].Name,
+                        Color.Cyan);
+                      OneFlagCTF.Team2Score = 0;
+                      OneFlagCTF.Team1Score = 0;
+                      OneFlagCTF.FlagCarrier = null;
+                      C3Mod.VoteType = "oneflag";
+                      OneFlagCTF.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
+                      C3Mod.VoteRunning = true;
+                    }
+                    else
+                      args.Player.SendMessage("One Flag CTF game already running!", Color.DarkCyan);
                   else
-                    args.Player.SendMessage("One Flag CTF game already running!", Color.DarkCyan);
+                    args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
                 else
-                  args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
-              else
-                args.Player.SendMessage("One Flag disabled on this server", Color.DarkCyan);
-            //Gametype Divider
-            ///TDM
-            else if (args.Parameters[0].ToLower() == "tdm")
-              if (C3Mod.C3Config.TeamDeathmatchEnabled)
-                if ((TDM.Arenas.Count > 0) && (TDM.Arenas.Count >= arena))
-                  if (!TDM.TDMRunning && !TDM.TDMCountdown)
-                  {
-                    TDM.TDMSpawns = TDM.Arenas[arena - 1].Spawns;
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Vote to play Team Deathmatch started by: " + args.Player.Name, Color.Cyan);
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Type /join to join the lobby for this game! Arena: " + TDM.Arenas[arena - 1].Name, Color.Cyan);
-                    TDM.Team2Score = 0;
-                    TDM.Team1Score = 0;
-                    C3Mod.VoteType = "tdm";
-                    TDM.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
-                    C3Mod.VoteRunning = true;
-                  }
+                  args.Player.SendMessage("One Flag disabled on this server", Color.DarkCyan);
+                break;
+              case "tdm":
+                if (C3Mod.C3Config.TeamDeathmatchEnabled)
+                  if ((TDM.Arenas.Count > 0) && (TDM.Arenas.Count >= arena))
+                    if (!TDM.TDMRunning && !TDM.TDMCountdown)
+                    {
+                      TDM.TDMSpawns = TDM.Arenas[arena - 1].Spawns;
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Vote to play Team Deathmatch started by: " + args.Player.Name, Color.Cyan);
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Type /join to join the lobby for this game! Arena: " + TDM.Arenas[arena - 1].Name, Color.Cyan);
+                      TDM.Team2Score = 0;
+                      TDM.Team1Score = 0;
+                      C3Mod.VoteType = "tdm";
+                      TDM.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
+                      C3Mod.VoteRunning = true;
+                    }
+                    else
+                      args.Player.SendMessage("Team Deathmatch already running!", Color.DarkCyan);
                   else
-                    args.Player.SendMessage("Team Deathmatch already running!", Color.DarkCyan);
+                    args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
                 else
-                  args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
-              else
-                args.Player.SendMessage("Team Deathmatch disabled on this server", Color.DarkCyan);
-            ///Gametype Divider
-            ///Apocalypse
-            else if (args.Parameters[0].ToLower() == "apocalypse")
-              if (C3Mod.C3Config.MonsterApocalypseEnabled)
-                if (!Apocalypse.Running && !Apocalypse.Intermission)
-                  if ((Apocalypse.SpectatorArea != Vector2.Zero) && (Apocalypse.PlayerSpawn != Vector2.Zero) &&
-                      (Apocalypse.MonsterSpawn != Vector2.Zero))
-                  {
-                    C3Tools.BroadcastMessageToGametype("", "Vote to play Apocalypse started by: " + args.Player.Name,
-                      Color.Cyan);
-                    C3Tools.BroadcastMessageToGametype("", "Type /join to join the lobby for this game!", Color.Cyan);
-                    Apocalypse.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
-                    C3Mod.VoteType = "apoc";
-                    Apocalypse.LastMonster = 0;
-                    Apocalypse.Wave = 0;
-                    C3Mod.VoteRunning = true;
-                  }
+                  args.Player.SendMessage("Team Deathmatch disabled on this server", Color.DarkCyan);
+                break;
+              case "apocalypse":
+                if (C3Mod.C3Config.MonsterApocalypseEnabled)
+                  if (!Apocalypse.Running && !Apocalypse.Intermission)
+                    if ((Apocalypse.SpectatorArea != Vector2.Zero) && (Apocalypse.PlayerSpawn != Vector2.Zero) &&
+                        (Apocalypse.MonsterSpawn != Vector2.Zero))
+                    {
+                      C3Tools.BroadcastMessageToGametype("", "Vote to play Apocalypse started by: " + args.Player.Name,
+                        Color.Cyan);
+                      C3Tools.BroadcastMessageToGametype("", "Type /join to join the lobby for this game!", Color.Cyan);
+                      Apocalypse.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
+                      C3Mod.VoteType = "apoc";
+                      Apocalypse.LastMonster = 0;
+                      Apocalypse.Wave = 0;
+                      C3Mod.VoteRunning = true;
+                    }
+                    else
+                      args.Player.SendMessage("Spawns not set up yet", Color.DarkCyan);
                   else
-                    args.Player.SendMessage("Spawns not set up yet", Color.DarkCyan);
+                    args.Player.SendMessage("Apocalypse already running!", Color.DarkCyan);
                 else
-                  args.Player.SendMessage("Apocalypse already running!", Color.DarkCyan);
-              else
-                args.Player.SendMessage("Apocalypse disabled on this server", Color.DarkCyan);
-            ///Gametype Divider
-            ///Free For All
-            else if (args.Parameters[0].ToLower() == "ffa")
-              if (C3Mod.C3Config.FreeForAllEnabled)
-                if ((FFA.Arenas.Count > 0) && (FFA.Arenas.Count >= arena) && (arena > 0))
-                  if (!FFA.FFARunning && !FFA.FFACountdown)
-                  {
-                    FFA.FFASpawn = FFA.Arenas[arena - 1].Spawn;
-                    C3Tools.BroadcastMessageToGametype("", "Vote to play Free For All started by: " + args.Player.Name,
-                      Color.Cyan);
-                    C3Tools.BroadcastMessageToGametype("",
-                      "Type /join to join the lobby for this game! Arena: " + FFA.Arenas[arena - 1].Name, Color.Cyan);
-                    foreach (var player in C3Mod.C3Players)
-                      player.FFAScore = 0;
-                    C3Mod.VoteType = "ffa";
-                    FFA.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
-                    C3Mod.VoteRunning = true;
-                  }
+                  args.Player.SendMessage("Apocalypse disabled on this server", Color.DarkCyan);
+                break;
+              case "ffa":
+                if (C3Mod.C3Config.FreeForAllEnabled)
+                  if ((FFA.Arenas.Count > 0) && (FFA.Arenas.Count >= arena) && (arena > 0))
+                    if (!FFA.FFARunning && !FFA.FFACountdown)
+                    {
+                      FFA.FFASpawn = FFA.Arenas[arena - 1].Spawn;
+                      C3Tools.BroadcastMessageToGametype("", "Vote to play Free For All started by: " + args.Player.Name,
+                        Color.Cyan);
+                      C3Tools.BroadcastMessageToGametype("",
+                        "Type /join to join the lobby for this game! Arena: " + FFA.Arenas[arena - 1].Name, Color.Cyan);
+                      foreach (var player in C3Mod.C3Players)
+                        player.FFAScore = 0;
+                      C3Mod.VoteType = "ffa";
+                      FFA.VoteCount = C3Mod.C3Config.VoteTime / C3Mod.C3Config.VoteNotifyInterval;
+                      C3Mod.VoteRunning = true;
+                    }
+                    else
+                      args.Player.SendMessage("Free For All already running!", Color.DarkCyan);
                   else
-                    args.Player.SendMessage("Free For All already running!", Color.DarkCyan);
+                    args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
                 else
-                  args.Player.SendMessage("Arena does not exist!", Color.DarkCyan);
-              else
-                args.Player.SendMessage("Free For All disabled on this server", Color.DarkCyan);
-            else
-              args.Player.SendMessage("Not an available gametype", Color.DarkCyan);
+                  args.Player.SendMessage("Free For All disabled on this server", Color.DarkCyan);
+                break;
+              default:
+                args.Player.SendMessage("Not an available gametype", Color.DarkCyan);
+                break;
+            }
           }
           else
             args.Player.SendMessage("Incorrect format: /vote <gametype>", Color.OrangeRed);

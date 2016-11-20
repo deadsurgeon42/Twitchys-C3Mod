@@ -91,7 +91,7 @@ namespace C3Mod
 
     internal void OnInitialize(EventArgs args)
     {
-      if (C3Config.TeamColor1 < 1 || C3Config.TeamColor1 > 4 || C3Config.TeamColor1 == C3Config.TeamColor2 || C3Config.TeamColor2 > 4 || C3Config.TeamColor2 < 1)
+      if (C3Config.TeamColor1 < 1 || C3Config.TeamColor1 > 5 || C3Config.TeamColor1 == C3Config.TeamColor2 || C3Config.TeamColor2 > 5 || C3Config.TeamColor2 < 1)
         throw new Exception("Team Colours are inccorectly set up. Check c3config.json");
 
       SQLEditor = new SqlTableEditor(TShock.DB, TShock.DB.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder)new SqliteQueryCreator() : new MysqlQueryCreator());
