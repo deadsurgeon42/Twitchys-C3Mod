@@ -243,7 +243,7 @@ namespace C3Mod.GameTypes
 
             C3Mod.C3Players[i].TSPlayer.TpLock = false;
 
-            if (C3Mod.C3Players[i].TSPlayer.X / 16 != FFASpawn.X || C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != FFASpawn.Y)
+            if (C3Mod.C3Players[i].TSPlayer.X / 16 != FFASpawn.X || C3Mod.C3Players[i].TSPlayer.Y / 16 != FFASpawn.Y)
             {
               TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)FFASpawn.X * 16, (int)FFASpawn.Y * 16);
             }

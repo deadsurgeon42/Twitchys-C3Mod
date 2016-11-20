@@ -17,7 +17,7 @@ namespace C3Mod
     public static void SetCTFTeam1Flag(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempflags[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempflags[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
 
       switch (C3Mod.C3Config.TeamColor1)
       {
@@ -42,7 +42,7 @@ namespace C3Mod
     public static void SetCTFTeam2Flag(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempflags[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempflags[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor2)
       {
         case 1:
@@ -66,7 +66,7 @@ namespace C3Mod
     public static void SetCTFTeam1Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
 
       switch (C3Mod.C3Config.TeamColor1)
       {
@@ -91,7 +91,7 @@ namespace C3Mod
     public static void SetCTFTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
 
       switch (C3Mod.C3Config.TeamColor2)
       {
@@ -168,14 +168,14 @@ namespace C3Mod
     public static void SetOneFlag(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempflags[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempflags[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       args.Player.SendMessage("Temporary One Flag set at your position", Color.Cyan);
     }
 
     public static void SetOneFlagTeam1Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor1)
       {
         case 1:
@@ -199,7 +199,7 @@ namespace C3Mod
     public static void SetOneFlagTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor2)
       {
         case 1:
@@ -272,7 +272,7 @@ namespace C3Mod
     public static void SetDuelTeam1Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor1)
       {
         case 1:
@@ -296,7 +296,7 @@ namespace C3Mod
     public static void SetDuelTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[1] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor2)
       {
         case 1:
@@ -365,7 +365,7 @@ namespace C3Mod
     public static void SetTDMTeam1Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor1)
       {
         case 1:
@@ -389,7 +389,7 @@ namespace C3Mod
     public static void SetTDMTeam2Spawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[1] = new Vector2((int) args.Player.X / 16, (int) args.Player.Y / 16 + 3);
+      player.tempspawns[1] = new Vector2((int) args.Player.X / 16, (int) args.Player.Y / 16);
       switch (C3Mod.C3Config.TeamColor2)
       {
         case 1:
@@ -458,7 +458,7 @@ namespace C3Mod
     public static void SetFFASpawn(CommandArgs args)
     {
       var player = C3Tools.GetC3PlayerByIndex(args.Player.Index);
-      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16 + 3);
+      player.tempspawns[0] = new Vector2((int)args.Player.X / 16, (int)args.Player.Y / 16);
       args.Player.SendMessage("Temporary FFA spawn set at your position", Color.OrangeRed);
     }
 

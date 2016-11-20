@@ -463,7 +463,7 @@ namespace C3Mod.GameTypes
 
       List<SqlValue> values = new List<SqlValue>();
       values.Add(new SqlValue("SpawnX", posX / 16));
-      values.Add(new SqlValue("SpawnY", posY / 16 + 3));
+      values.Add(new SqlValue("SpawnY", posY / 16));
       C3Mod.SQLEditor.UpdateValues("Apocalypse", values, new List<SqlValue>());
     }
 
@@ -474,7 +474,7 @@ namespace C3Mod.GameTypes
 
       List<SqlValue> values = new List<SqlValue>();
       values.Add(new SqlValue("MonsterSpawnX", posX / 16));
-      values.Add(new SqlValue("MonsterSpawnY", posY / 16 + 3));
+      values.Add(new SqlValue("MonsterSpawnY", posY / 16));
       C3Mod.SQLEditor.UpdateValues("Apocalypse", values, new List<SqlValue>());
     }
 
@@ -485,7 +485,7 @@ namespace C3Mod.GameTypes
 
       List<SqlValue> values = new List<SqlValue>();
       values.Add(new SqlValue("SpectatorSpawnX", posX / 16));
-      values.Add(new SqlValue("SpectatorSpawnY", posY / 16 + 3));
+      values.Add(new SqlValue("SpectatorSpawnY", posY / 16));
       C3Mod.SQLEditor.UpdateValues("Apocalypse", values, new List<SqlValue>());
     }
   }

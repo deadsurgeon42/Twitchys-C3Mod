@@ -761,11 +761,11 @@ namespace C3Mod.GameTypes
 
             if (spawnPoints[0] == Vector2.Zero)
             {
-              if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)(spawnPoints[0].X) || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != (int)(spawnPoints[0].Y))
+              if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)(spawnPoints[0].X) || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 != (int)(spawnPoints[0].Y))
                 TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)spawnPoints[0].X * 16, (int)spawnPoints[0].Y * 16);
             }
             else
-                if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)spawnPoints[0].X || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != (int)spawnPoints[0].Y)
+                if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)spawnPoints[0].X || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 != (int)spawnPoints[0].Y)
               TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)spawnPoints[0].X * 16, (int)spawnPoints[0].Y * 16);
 
             if (C3Mod.C3Config.TPLockEnabled) { C3Mod.C3Players[i].TSPlayer.TpLock = true; }
@@ -778,11 +778,11 @@ namespace C3Mod.GameTypes
 
             if (spawnPoints[1] == Vector2.Zero)
             {
-              if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)(flagPoints[1].X) || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != (int)(flagPoints[1].Y))
+              if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)(flagPoints[1].X) || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 != (int)(flagPoints[1].Y))
                 TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)flagPoints[1].X * 16, (int)flagPoints[1].Y * 16);
             }
             else
-                  if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)spawnPoints[1].X || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != (int)spawnPoints[1].Y)
+                  if ((int)C3Mod.C3Players[i].TSPlayer.X / 16 != (int)spawnPoints[1].X || (int)C3Mod.C3Players[i].TSPlayer.Y / 16 != (int)spawnPoints[1].Y)
               TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)spawnPoints[1].X * 16, (int)spawnPoints[1].Y * 16);
 
             if (C3Mod.C3Config.TPLockEnabled) { C3Mod.C3Players[i].TSPlayer.TpLock = true; }

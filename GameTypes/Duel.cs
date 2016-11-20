@@ -243,7 +243,7 @@ namespace C3Mod.GameTypes
           {
             Team1Player = true;
             C3Mod.C3Players[i].TSPlayer.TpLock = false;
-            if (C3Mod.C3Players[i].TSPlayer.X / 16 != DuelSpawns[0].X || C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != DuelSpawns[0].Y)
+            if (C3Mod.C3Players[i].TSPlayer.X / 16 != DuelSpawns[0].X || C3Mod.C3Players[i].TSPlayer.Y / 16 != DuelSpawns[0].Y)
             {
               TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)DuelSpawns[0].X * 16, (int)DuelSpawns[0].Y * 16);
             }
@@ -253,7 +253,7 @@ namespace C3Mod.GameTypes
           {
             Team2Player = true;
             C3Mod.C3Players[i].TSPlayer.TpLock = false;
-            if (C3Mod.C3Players[i].TSPlayer.X / 16 != DuelSpawns[1].X || C3Mod.C3Players[i].TSPlayer.Y / 16 + 3 != DuelSpawns[1].Y)
+            if (C3Mod.C3Players[i].TSPlayer.X / 16 != DuelSpawns[1].X || C3Mod.C3Players[i].TSPlayer.Y / 16 != DuelSpawns[1].Y)
             {
               TShock.Players[C3Mod.C3Players[i].Index].Teleport((int)DuelSpawns[1].X * 16, (int)DuelSpawns[1].Y * 16);
             }
