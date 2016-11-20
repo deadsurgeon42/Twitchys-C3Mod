@@ -29,8 +29,8 @@ namespace C3Mod
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error in config file");
                 Console.ForegroundColor = ConsoleColor.Gray;
-                Console.WriteLine("Config Exception");
-                Console.WriteLine(ex.ToString());
+                TShock.Log.Error("Config Exception");
+                TShock.Log.Error(ex.ToString());
             }
         }
         //Converted v2.2
