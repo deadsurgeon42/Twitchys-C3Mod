@@ -65,7 +65,7 @@ namespace C3Mod
                 }
                 catch (Exception ex)
                 {
-                    Log.Error(ex.ToString());
+                    Console.WriteLine(ex.ToString());
                 }
             }
             return false;

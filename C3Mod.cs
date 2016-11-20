@@ -12,7 +12,7 @@ using TShockAPI.DB;
 
 namespace C3Mod
 {
-    [ApiVersion(1, 14)]
+    [ApiVersion(1, 26)]
     public class C3Mod : TerrariaPlugin
     {
         public static C3ConfigFile C3Config { get; set; }
@@ -272,7 +272,7 @@ namespace C3Mod
                 new SqlColumn("BlueSpawnX", MySqlDbType.Int32),
                 new SqlColumn("BlueSpawnY", MySqlDbType.Int32)
             );
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if ((ArenaCount = SQLEditor.ReadColumn("FlagPoints", "Name", new List<SqlValue>()).Count) != 0)
             {
@@ -303,7 +303,7 @@ namespace C3Mod
                 new SqlColumn("BlueSpawnX", MySqlDbType.Int32),
                 new SqlColumn("BlueSpawnY", MySqlDbType.Int32)
             );
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if ((ArenaCount = SQLEditor.ReadColumn("DuelSpawns", "Name", new List<SqlValue>()).Count) != 0)
             {
@@ -332,7 +332,7 @@ namespace C3Mod
                 new SqlColumn("BlueSpawnX", MySqlDbType.Int32),
                 new SqlColumn("BlueSpawnY", MySqlDbType.Int32)
             );
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if ((ArenaCount = SQLEditor.ReadColumn("OneFlagPoints", "Name", new List<SqlValue>()).Count) != 0)
             {
@@ -362,7 +362,7 @@ namespace C3Mod
                 new SqlColumn("BlueSpawnY", MySqlDbType.Int32)
             );
             SQLWriter = new SqlTableCreator(TShock.DB, TShock.DB.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder)new SqliteQueryCreator() : new MysqlQueryCreator());
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if ((ArenaCount = SQLEditor.ReadColumn("TDMSpawns", "Name", new List<SqlValue>()).Count) != 0)
             {
@@ -388,7 +388,7 @@ namespace C3Mod
                 new SqlColumn("SpawnY", MySqlDbType.Int32)
             );
             SQLWriter = new SqlTableCreator(TShock.DB, TShock.DB.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder)new SqliteQueryCreator() : new MysqlQueryCreator());
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if ((ArenaCount = SQLEditor.ReadColumn("FFASpawns", "Name", new List<SqlValue>()).Count) != 0)
             {
@@ -415,7 +415,7 @@ namespace C3Mod
                 new SqlColumn("SpectatorSpawnY", MySqlDbType.Int32)
             );
             SQLWriter = new SqlTableCreator(TShock.DB, TShock.DB.GetSqlType() == SqlType.Sqlite ? (IQueryBuilder)new SqliteQueryCreator() : new MysqlQueryCreator());
-            SQLWriter.EnsureExists(table);
+            SQLWriter.EnsureTableStructure(table);
 
             if (SQLEditor.ReadColumn("Apocalypse", "SpawnX", new List<SqlValue>()).Count == 0)
             {
@@ -514,7 +514,7 @@ namespace C3Mod
                 }
                 catch (Exception ex)
                 {
-                    Log.Error(ex.ToString());
+                    Console.WriteLine(ex.ToString());
                 }
             }
         }
