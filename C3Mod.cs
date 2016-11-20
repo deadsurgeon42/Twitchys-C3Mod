@@ -23,24 +23,14 @@ namespace C3Mod
         internal static SqlTableCreator SQLWriter;
         internal static readonly Version VersionNum = Assembly.GetExecutingAssembly().GetName().Version;
 
-        public override string Name
-        {
-            get { return "C3Mod"; }
-        }
-        public override string Author
-        {
-            get { return "Now Open Source... Donating helps all contributors!"; }
-        }
-        public override string Description
-        {
-            get { return "Now Open Source... Donating helps all contributors!"; }
-        }
-        public override Version Version
-        {
-            get { return VersionNum; }
-        }
+        public override string Name => "C3Mod";
+      public override string Author => "Twitchy, Olink and various contributors";
 
-        public override void Initialize()
+      public override string Description => "Game modes plugin for TShock"
+
+      public override Version Version => VersionNum;
+
+      public override void Initialize()
         {
             C3Tools.SetupConfig();
 
