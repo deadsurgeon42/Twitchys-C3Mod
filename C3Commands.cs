@@ -1203,6 +1203,11 @@ namespace C3Mod
                             }
                             break;
                         }
+                    default:
+                    {
+                        args.Player.SendMessage("Invalid game type specified. Usage: /list <gametype>", Color.Red);
+                        break;
+                    }
                 }
             }
         }
