@@ -219,7 +219,10 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightGreen);
+                                                                 Color.
+                                                                 
+                                                                 
+                                                                 Green);
                               break;
                             }
                           case 3:
@@ -228,7 +231,7 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightBlue);
+                                                                 Color.Blue);
                               break;
                             }
                           case 4:
@@ -237,7 +240,7 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightYellow);
+                                                                 Color.Yellow);
                               break;
                             }
                         }
@@ -260,7 +263,7 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightGreen);
+                                                                 Color.Green);
                               break;
                             }
                           case 3:
@@ -269,7 +272,7 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightBlue);
+                                                                 Color.Blue);
                               break;
                             }
                           case 4:
@@ -278,7 +281,7 @@ namespace C3Mod.GameTypes
                                                                  Main.player[player.Index]
                                                                      .name +
                                                                  " has the flag!",
-                                                                 Color.LightYellow);
+                                                                 Color.Yellow);
                               break;
                             }
                         }
@@ -314,17 +317,17 @@ namespace C3Mod.GameTypes
                     }
                   case 2:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightGreen);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Green);
                       break;
                     }
                   case 3:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightBlue);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Blue);
                       break;
                     }
                   case 4:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightYellow);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Yellow);
                       break;
                     }
                 }
@@ -338,17 +341,17 @@ namespace C3Mod.GameTypes
                     }
                   case 2:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightGreen);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Green);
                       break;
                     }
                   case 3:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightBlue);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Blue);
                       break;
                     }
                   case 4:
                     {
-                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.LightYellow);
+                      C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + " dropped the flag!", Color.Yellow);
                       break;
                     }
                 }
@@ -379,31 +382,31 @@ namespace C3Mod.GameTypes
                     case 2:
                       {
                         if (C3Mod.C3Config.TeamColor2 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Red", Color.Green);
                         else if (C3Mod.C3Config.TeamColor2 == 3)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Blue", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Blue", Color.Green);
                         else if (C3Mod.C3Config.TeamColor2 == 4)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.Green);
                         break;
                       }
                     case 3:
                       {
                         if (C3Mod.C3Config.TeamColor2 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Red", Color.Blue);
                         else if (C3Mod.C3Config.TeamColor2 == 2)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Green", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Green", Color.Blue);
                         else if (C3Mod.C3Config.TeamColor2 == 4)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.Blue);
                         break;
                       }
                     case 4:
                       {
                         if (C3Mod.C3Config.TeamColor2 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Red", Color.Yellow);
                         else if (C3Mod.C3Config.TeamColor2 == 2)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Green", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Green", Color.Yellow);
                         else if (C3Mod.C3Config.TeamColor2 == 3)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Blue", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Blue", Color.Yellow);
                         break;
                       }
                   }
@@ -455,31 +458,31 @@ namespace C3Mod.GameTypes
                     case 2:
                       {
                         if (C3Mod.C3Config.TeamColor1 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Red", Color.Green);
                         else if (C3Mod.C3Config.TeamColor1 == 3)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Blue", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Blue", Color.Green);
                         else if (C3Mod.C3Config.TeamColor1 == 4)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.LightGreen);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.Green);
                         break;
                       }
                     case 3:
                       {
                         if (C3Mod.C3Config.TeamColor1 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Red", Color.Blue);
                         else if (C3Mod.C3Config.TeamColor1 == 2)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Green", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Green", Color.Blue);
                         else if (C3Mod.C3Config.TeamColor1 == 4)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.LightBlue);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.Blue);
                         break;
                       }
                     case 4:
                       {
                         if (C3Mod.C3Config.TeamColor1 == 1)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Red", Color.Yellow);
                         else if (C3Mod.C3Config.TeamColor1 == 2)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Green", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Green", Color.Yellow);
                         else if (C3Mod.C3Config.TeamColor1 == 3)
-                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Blue", Color.LightYellow);
+                          C3Tools.BroadcastMessageToGametype("oneflag", FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Blue", Color.Yellow);
                         break;
                       }
                   }
@@ -520,11 +523,11 @@ namespace C3Mod.GameTypes
             if (C3Mod.C3Config.TeamColor2 == 1)
               C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
             else if (C3Mod.C3Config.TeamColor2 == 2)
-              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.LightGreen);
+              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.Green);
             else if (C3Mod.C3Config.TeamColor2 == 3)
-              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.LightBlue);
+              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.Blue);
             else if (C3Mod.C3Config.TeamColor2 == 4)
-              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.LightYellow);
+              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.Yellow);
 
             List<C3Player> LostPlayers = new List<C3Player>();
             List<C3Player> WonPlayers = new List<C3Player>();
@@ -554,11 +557,11 @@ namespace C3Mod.GameTypes
             if (C3Mod.C3Config.TeamColor1 == 1)
               C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
             else if (C3Mod.C3Config.TeamColor1 == 2)
-              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.LightGreen);
+              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.Green);
             else if (C3Mod.C3Config.TeamColor1 == 3)
-              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.LightBlue);
+              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.Blue);
             else if (C3Mod.C3Config.TeamColor1 == 4)
-              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.LightYellow);
+              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.Yellow);
 
             List<C3Player> LostPlayers = new List<C3Player>();
             List<C3Player> WonPlayers = new List<C3Player>();

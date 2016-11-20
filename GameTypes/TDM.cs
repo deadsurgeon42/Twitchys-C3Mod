@@ -262,11 +262,11 @@ namespace C3Mod.GameTypes
             if (C3Mod.C3Config.TeamColor2 == 1)
               C3Tools.BroadcastMessageToGametype("tdm", "RED TEAM WINS!", Color.OrangeRed);
             else if (C3Mod.C3Config.TeamColor2 == 2)
-              C3Tools.BroadcastMessageToGametype("tdm", "GREEN TEAM WINS!", Color.LightGreen);
+              C3Tools.BroadcastMessageToGametype("tdm", "GREEN TEAM WINS!", Color.Green);
             else if (C3Mod.C3Config.TeamColor2 == 3)
-              C3Tools.BroadcastMessageToGametype("tdm", "BLUE TEAM WINS!", Color.LightBlue);
+              C3Tools.BroadcastMessageToGametype("tdm", "BLUE TEAM WINS!", Color.Blue);
             else if (C3Mod.C3Config.TeamColor2 == 4)
-              C3Tools.BroadcastMessageToGametype("tdm", "YELLOW TEAM WINS!", Color.LightYellow);
+              C3Tools.BroadcastMessageToGametype("tdm", "YELLOW TEAM WINS!", Color.Yellow);
 
             List<C3Player> LostPlayers = new List<C3Player>();
             List<C3Player> WonPlayers = new List<C3Player>();
@@ -296,11 +296,11 @@ namespace C3Mod.GameTypes
             if (C3Mod.C3Config.TeamColor1 == 1)
               C3Tools.BroadcastMessageToGametype("tdm", "RED TEAM WINS!", Color.OrangeRed);
             else if (C3Mod.C3Config.TeamColor1 == 2)
-              C3Tools.BroadcastMessageToGametype("tdm", "GREEN TEAM WINS!", Color.LightGreen);
+              C3Tools.BroadcastMessageToGametype("tdm", "GREEN TEAM WINS!", Color.Green);
             else if (C3Mod.C3Config.TeamColor1 == 3)
-              C3Tools.BroadcastMessageToGametype("tdm", "BLUE TEAM WINS!", Color.LightBlue);
+              C3Tools.BroadcastMessageToGametype("tdm", "BLUE TEAM WINS!", Color.Blue);
             else if (C3Mod.C3Config.TeamColor1 == 4)
-              C3Tools.BroadcastMessageToGametype("tdm", "YELLOW TEAM WINS!", Color.LightYellow);
+              C3Tools.BroadcastMessageToGametype("tdm", "YELLOW TEAM WINS!", Color.Yellow);
 
             List<C3Player> LostPlayers = new List<C3Player>();
             List<C3Player> WonPlayers = new List<C3Player>();

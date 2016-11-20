@@ -216,7 +216,7 @@ namespace C3Mod.GameTypes
                             C3Tools.BroadcastMessageToGametype("ctf",
                                                                Main.player[player.Index].
                                                                    name + " has the flag!",
-                                                               Color.LightGreen);
+                                                               Color.Green);
                             break;
                           }
                         case 3:
@@ -224,7 +224,7 @@ namespace C3Mod.GameTypes
                             C3Tools.BroadcastMessageToGametype("ctf",
                                                                Main.player[player.Index].
                                                                    name + " has the flag!",
-                                                               Color.LightBlue);
+                                                               Color.Blue);
                             break;
                           }
                         case 4:
@@ -232,7 +232,15 @@ namespace C3Mod.GameTypes
                             C3Tools.BroadcastMessageToGametype("ctf",
                                                                Main.player[player.Index].
                                                                    name + " has the flag!",
-                                                               Color.LightYellow);
+                                                               Color.Yellow);
+                            break;
+                          }
+                        case 5:
+                          {
+                            C3Tools.BroadcastMessageToGametype("ctf",
+                                                               Main.player[player.Index].
+                                                                   name + " has the flag!",
+                                                               Color.Pink);
                             break;
                           }
                       }
@@ -249,35 +257,43 @@ namespace C3Mod.GameTypes
                       switch (C3Mod.C3Config.TeamColor2)
                       {
                         case 1:
-                          {
-                            C3Tools.BroadcastMessageToGametype("ctf",
-                                                               Main.player[player.Index].
-                                                                   name + " has the flag!",
-                                                               Color.OrangeRed);
-                            break;
-                          }
+                        {
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Main.player[player.Index].
+                              name + " has the flag!",
+                            Color.OrangeRed);
+                          break;
+                        }
                         case 2:
-                          {
-                            C3Tools.BroadcastMessageToGametype("ctf",
-                                                               Main.player[player.Index].
-                                                                   name + " has the flag!",
-                                                               Color.LightGreen);
-                            break;
-                          }
+                        {
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Main.player[player.Index].
+                              name + " has the flag!",
+                            Color.Green);
+                          break;
+                        }
                         case 3:
-                          {
-                            C3Tools.BroadcastMessageToGametype("ctf",
-                                                               Main.player[player.Index].
-                                                                   name + " has the flag!",
-                                                               Color.LightBlue);
-                            break;
-                          }
+                        {
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Main.player[player.Index].
+                              name + " has the flag!",
+                            Color.Blue);
+                          break;
+                        }
                         case 4:
+                        {
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Main.player[player.Index].
+                              name + " has the flag!",
+                            Color.Yellow);
+                          break;
+                        }
+                        case 5:
                           {
                             C3Tools.BroadcastMessageToGametype("ctf",
                                                                Main.player[player.Index].
                                                                    name + " has the flag!",
-                                                               Color.LightYellow);
+                                                               Color.Pink);
                             break;
                           }
                       }
@@ -305,7 +321,7 @@ namespace C3Mod.GameTypes
             //Make them drop the flag
             if (Team2FlagCarrier.TerrariaDead)
             {
-              C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Dropped the flag!", Color.LightBlue);
+              C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Dropped the flag!", Color.Blue);
               Team2FlagCarrier = null;
             }
             //Capture the flag
@@ -317,45 +333,106 @@ namespace C3Mod.GameTypes
                 switch (C3Mod.C3Config.TeamColor2)
                 {
                   case 1:
+                  {
+                    switch (C3Mod.C3Config.TeamColor1)
                     {
-                      if (C3Mod.C3Config.TeamColor1 == 2)
+                      case 2:
                         C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Red - " + Team2Score + " --- " + Team1Score + " - Green", Color.OrangeRed);
-                      else if (C3Mod.C3Config.TeamColor1 == 3)
+                        break;
+                      case 3:
                         C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Red - " + Team2Score + " --- " + Team1Score + " - Blue", Color.OrangeRed);
-                      else if (C3Mod.C3Config.TeamColor1 == 4)
+                        break;
+                      case 4:
                         C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Red - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.OrangeRed);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Red - " + Team2Score + " --- " + Team1Score + " - Pink", Color.OrangeRed);
+                        break;
+
+                      }
                       break;
-                    }
+                  }
                   case 2:
+                  {
+                    switch (C3Mod.C3Config.TeamColor1)
                     {
-                      if (C3Mod.C3Config.TeamColor1 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightGreen);
-                      else if (C3Mod.C3Config.TeamColor1 == 3)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Blue", Color.LightGreen);
-                      else if (C3Mod.C3Config.TeamColor1 == 4)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.LightGreen);
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Red", Color.Green);
+                        break;
+                      case 3:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Blue", Color.Green);
+                        break;
+                      case 4:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.Green);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Green - " + Team2Score + " --- " + Team1Score + " - Pink", Color.Green);
+                        break;
+
+                      }
                       break;
-                    }
+                  }
                   case 3:
+                  {
+                    switch (C3Mod.C3Config.TeamColor1)
                     {
-                      if (C3Mod.C3Config.TeamColor1 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightBlue);
-                      else if (C3Mod.C3Config.TeamColor1 == 2)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Green", Color.LightBlue);
-                      else if (C3Mod.C3Config.TeamColor1 == 4)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.LightBlue);
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Red", Color.Blue);
+                        break;
+                      case 2:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Green", Color.Blue);
+                        break;
+                      case 4:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.Blue);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Blue - " + Team2Score + " --- " + Team1Score + " - Pink", Color.Blue);
+                        break;
+
+                      }
                       break;
-                    }
+                  }
                   case 4:
+                  {
+                    switch (C3Mod.C3Config.TeamColor1)
                     {
-                      if (C3Mod.C3Config.TeamColor1 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Red", Color.LightYellow);
-                      else if (C3Mod.C3Config.TeamColor1 == 2)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Green", Color.LightYellow);
-                      else if (C3Mod.C3Config.TeamColor1 == 3)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Blue", Color.LightYellow);
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Red", Color.Yellow);
+                        break;
+                      case 2:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Green", Color.Yellow);
+                        break;
+                      case 3:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Blue", Color.Yellow);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team2Score + " --- " + Team1Score + " - Pink", Color.Yellow);
+                        break;
+
+                      }
+                      break;
+                  }
+                  case 5:
+                    {
+                      switch (C3Mod.C3Config.TeamColor1)
+                      {
+                        case 1:
+                          C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Pink - " + Team2Score + " --- " + Team1Score + " - Red", Color.Pink);
+                          break;
+                        case 2:
+                          C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Pink - " + Team2Score + " --- " + Team1Score + " - Green", Color.Pink);
+                          break;
+                        case 3:
+                          C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Pink - " + Team2Score + " --- " + Team1Score + " - Blue", Color.Pink);
+                          break;
+                        case 4:
+                          C3Tools.BroadcastMessageToGametype("ctf", Team2FlagCarrier.PlayerName + ": Scores!  Pink - " + Team2Score + " --- " + Team1Score + " - Yellow", Color.Pink);
+                          break;
+
+                      }
                       break;
                     }
+
                 }
                 C3Events.FlagCapture(Team2FlagCarrier, "ctf", "Team2", Team2Score, Team1Score);
                 Team2FlagCarrier = null;
@@ -405,45 +482,140 @@ namespace C3Mod.GameTypes
                 switch (C3Mod.C3Config.TeamColor1)
                 {
                   case 1:
+                    switch (C3Mod.C3Config.TeamColor2)
                     {
-                      if (C3Mod.C3Config.TeamColor2 == 2)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score + " - Green", Color.OrangeRed);
-                      else if (C3Mod.C3Config.TeamColor2 == 3)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score + " - Blue", Color.OrangeRed);
-                      else if (C3Mod.C3Config.TeamColor2 == 4)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.OrangeRed);
-                      break;
+                      case 2:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score +
+                          " - Green", Color.OrangeRed);
+                        break;
+                      case 3:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score +
+                          " - Blue", Color.OrangeRed);
+                        break;
+                      case 4:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score +
+                          " - Yellow", Color.OrangeRed);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Red - " + Team1Score + " --- " + Team2Score +
+                          " - Pink", Color.Green);
+                        break;
                     }
+                    break;
                   case 2:
+                  {
+                    switch (C3Mod.C3Config.TeamColor2)
                     {
-                      if (C3Mod.C3Config.TeamColor2 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightGreen);
-                      else if (C3Mod.C3Config.TeamColor2 == 3)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Blue", Color.LightGreen);
-                      else if (C3Mod.C3Config.TeamColor2 == 4)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.LightGreen);
-                      break;
-                    }
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score +
+                          " - Red", Color.Green);
+                        break;
+                      case 3:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score +
+                          " - Blue", Color.Green);
+                        break;
+                      case 4:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score +
+                          " - Yellow", Color.Green);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Green - " + Team1Score + " --- " + Team2Score +
+                          " - Pink", Color.Green);
+                        break;
+                      }
+                    break;
+                  }
                   case 3:
+                  {
+                    switch (C3Mod.C3Config.TeamColor2)
                     {
-                      if (C3Mod.C3Config.TeamColor2 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightBlue);
-                      else if (C3Mod.C3Config.TeamColor2 == 2)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Green", Color.LightBlue);
-                      else if (C3Mod.C3Config.TeamColor2 == 4)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score + " - Yellow", Color.LightBlue);
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score +
+                          " - Red", Color.Blue);
+                        break;
+                      case 2:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score +
+                          " - Green", Color.Blue);
+                        break;
+                      case 4:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score +
+                          " - Yellow", Color.Blue);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Blue - " + Team1Score + " --- " + Team2Score +
+                          " - Pink", Color.Blue);
+                        break;
+                      }
                       break;
-                    }
+                  }
                   case 4:
+                  {
+                    switch (C3Mod.C3Config.TeamColor2)
                     {
-                      if (C3Mod.C3Config.TeamColor2 == 1)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Red", Color.LightYellow);
-                      else if (C3Mod.C3Config.TeamColor2 == 2)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Green", Color.LightYellow);
-                      else if (C3Mod.C3Config.TeamColor2 == 3)
-                        C3Tools.BroadcastMessageToGametype("ctf", Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score + " - Blue", Color.LightYellow);
+                      case 1:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score +
+                          " - Red", Color.Yellow);
+                        break;
+                      case 2:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score +
+                          " - Green", Color.Yellow);
+                        break;
+                      case 3:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score +
+                          " - Blue", Color.Yellow);
+                        break;
+                      case 5:
+                        C3Tools.BroadcastMessageToGametype("ctf",
+                          Team1FlagCarrier.PlayerName + ": Scores!  Yellow - " + Team1Score + " --- " + Team2Score +
+                          " - Pink", Color.Yellow);
+                        break;
+                      }
+                      break;
+                  }
+                  case 5:
+                    {
+                      switch (C3Mod.C3Config.TeamColor2)
+                      {
+                        case 1:
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Team1FlagCarrier.PlayerName + ": Scores!  Pink - " + Team1Score + " --- " + Team2Score +
+                            " - Red", Color.
+                            Pink);
+                          break;
+                        case 2:
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Team1FlagCarrier.PlayerName + ": Scores!  Pink - " + Team1Score + " --- " + Team2Score +
+                            " - Green", Color.Pink);
+                          break;
+                        case 3:
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Team1FlagCarrier.PlayerName + ": Scores!  Pink - " + Team1Score + " --- " + Team2Score +
+                            " - Blue", Color.Pink);
+                          break;
+                        case 4:
+                          C3Tools.BroadcastMessageToGametype("ctf",
+                            Team1FlagCarrier.PlayerName + ": Scores!  Pink - " + Team1Score + " --- " + Team2Score +
+                            " - Yellow", Color.Pink);
+                          break;
+                      }
                       break;
                     }
+
                 }
                 C3Events.FlagCapture(Team1FlagCarrier, "ctf", "Team1", Team1Score, Team2Score);
                 Team1FlagCarrier = null;
@@ -483,14 +655,24 @@ namespace C3Mod.GameTypes
         if (Team2Score == C3Mod.C3Config.CTFScoreLimit)
         {
           CTFGameRunning = false;
-          if (C3Mod.C3Config.TeamColor2 == 1)
-            C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
-          else if (C3Mod.C3Config.TeamColor2 == 2)
-            C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.LightGreen);
-          else if (C3Mod.C3Config.TeamColor2 == 3)
-            C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.LightBlue);
-          else if (C3Mod.C3Config.TeamColor2 == 4)
-            C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.LightYellow);
+          switch (C3Mod.C3Config.TeamColor2)
+          {
+            case 1:
+              C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
+              break;
+            case 2:
+              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.Green);
+              break;
+            case 3:
+              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.Blue);
+              break;
+            case 4:
+              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.Yellow);
+              break;
+            case 5:
+              C3Tools.BroadcastMessageToGametype("ctf", "PINK TEAM WINS!", Color.Pink);
+              break;
+          }
           List<C3Player> LostPlayers = new List<C3Player>();
           List<C3Player> WonPlayers = new List<C3Player>();
 
@@ -516,14 +698,24 @@ namespace C3Mod.GameTypes
         if (Team1Score == C3Mod.C3Config.CTFScoreLimit)
         {
           CTFGameRunning = false;
-          if (C3Mod.C3Config.TeamColor1 == 1)
-            C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
-          else if (C3Mod.C3Config.TeamColor1 == 2)
-            C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.LightGreen);
-          else if (C3Mod.C3Config.TeamColor1 == 3)
-            C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.LightBlue);
-          else if (C3Mod.C3Config.TeamColor1 == 4)
-            C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.LightYellow);
+          switch (C3Mod.C3Config.TeamColor1)
+          {
+            case 1:
+              C3Tools.BroadcastMessageToGametype("ctf", "RED TEAM WINS!", Color.OrangeRed);
+              break;
+            case 2:
+              C3Tools.BroadcastMessageToGametype("ctf", "GREEN TEAM WINS!", Color.Green);
+              break;
+            case 3:
+              C3Tools.BroadcastMessageToGametype("ctf", "BLUE TEAM WINS!", Color.Blue);
+              break;
+            case 4:
+              C3Tools.BroadcastMessageToGametype("ctf", "YELLOW TEAM WINS!", Color.Yellow);
+              break;
+            case 5:
+              C3Tools.BroadcastMessageToGametype("ctf", "PINK TEAM WINS!", Color.Pink);
+              break;
+          }
           List<C3Player> LostPlayers = new List<C3Player>();
           List<C3Player> WonPlayers = new List<C3Player>();
 

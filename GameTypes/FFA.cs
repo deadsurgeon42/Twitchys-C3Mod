@@ -186,7 +186,10 @@ namespace C3Mod.GameTypes
                 {
                   FFARunning = false;
                   C3Tools.BroadcastMessageToGametype("ffa", player.TSPlayer.Name + " WINS!",
-                                                     Color.LightBlue);
+                                                     Color.
+                                                     
+                                                     
+                                                     Blue);
 
                   List<C3Player> LostPlayers = new List<C3Player>();
                   List<C3Player> Winner = new List<C3Player>();

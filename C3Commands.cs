@@ -537,7 +537,7 @@ namespace C3Mod
             {
               if (CTF.CTFGameRunning || CTF.CTFGameCountdown)
               {
-                C3Tools.BroadcastMessageToGametype("ctf", "CTF stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("ctf", "CTF stopped by admin", Color.Blue);
                 args.Player.SendMessage("CTF Game Stopped", Color.DarkCyan);
                 CTF.TpToSpawns(false);
                 C3Tools.ResetGameType("ctf");
@@ -556,7 +556,7 @@ namespace C3Mod
             {
               if (Duel.DuelRunning || Duel.DuelCountdown)
               {
-                C3Tools.BroadcastMessageToGametype("1v1", "Duel stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("1v1", "Duel stopped by admin", Color.Blue);
                 args.Player.SendMessage("Duel Stopped", Color.DarkCyan);
                 Duel.TpToSpawns(false);
                 C3Tools.ResetGameType("1v1");
@@ -574,7 +574,7 @@ namespace C3Mod
             {
               if (OneFlagCTF.OneFlagGameCountdown || OneFlagCTF.OneFlagGameRunning)
               {
-                C3Tools.BroadcastMessageToGametype("oneflag", "One flag stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("oneflag", "One flag stopped by admin", Color.Blue);
                 args.Player.SendMessage("One Flag Stopped", Color.DarkCyan);
                 OneFlagCTF.SendToSpawn(false);
                 C3Tools.ResetGameType("oneflag");
@@ -593,7 +593,7 @@ namespace C3Mod
             {
               if (Apocalypse.Intermission || Apocalypse.Running)
               {
-                C3Tools.BroadcastMessageToGametype("apoc", "Apocalypse stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("apoc", "Apocalypse stopped by admin", Color.Blue);
                 args.Player.SendMessage("Apocalypse Stopped", Color.DarkCyan);
                 Apocalypse.TpToSpawns(false);
                 C3Tools.ResetGameType("apoc");
@@ -610,7 +610,7 @@ namespace C3Mod
             {
               if (TDM.TDMCountdown || TDM.TDMRunning)
               {
-                C3Tools.BroadcastMessageToGametype("tdm", "Team Deathmatch stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("tdm", "Team Deathmatch stopped by admin", Color.Blue);
                 args.Player.SendMessage("Team Deathmatch Stopped", Color.DarkCyan);
                 TDM.TpToSpawns(false);
                 C3Tools.ResetGameType("tdm");
@@ -627,7 +627,7 @@ namespace C3Mod
             {
               if (FFA.FFACountdown || FFA.FFARunning)
               {
-                C3Tools.BroadcastMessageToGametype("ffa", "Free For All stopped by admin", Color.LightBlue);
+                C3Tools.BroadcastMessageToGametype("ffa", "Free For All stopped by admin", Color.Blue);
                 args.Player.SendMessage("Free For All Stopped", Color.DarkCyan);
                 FFA.TpToSpawns(false);
                 C3Tools.ResetGameType("ffa");
@@ -823,17 +823,17 @@ namespace C3Mod
                     }
                   case "Green":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.LightGreen);
+                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.Green);
                       break;
                     }
                   case "Blue":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.LightBlue);
+                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.Blue);
                       break;
                     }
                   case "Yellow":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.LightYellow);
+                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.Yellow);
                       break;
                     }
                 }
@@ -854,17 +854,17 @@ namespace C3Mod
                     }
                   case "Green":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.LightGreen);
+                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.Green);
                       break;
                     }
                   case "Blue":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.LightBlue);
+                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.Blue);
                       break;
                     }
                   case "Yellow":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.LightYellow);
+                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.Yellow);
                       break;
                     }
                 }
@@ -885,17 +885,17 @@ namespace C3Mod
                     }
                   case "Green":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.LightGreen);
+                      args.Player.SendMessage("You have been auto assigned to the Green team!", Color.Green);
                       break;
                     }
                   case "Blue":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.LightBlue);
+                      args.Player.SendMessage("You have been auto assigned to the Blue team!", Color.Blue);
                       break;
                     }
                   case "Yellow":
                     {
-                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.LightYellow);
+                      args.Player.SendMessage("You have been auto assigned to the Yellow team!", Color.Yellow);
                       break;
                     }
                 }
