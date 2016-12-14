@@ -62,8 +62,7 @@ namespace C3Mod
       using (var sr = new StreamReader(stream))
       {
         var cf = JsonConvert.DeserializeObject<C3ConfigFile>(sr.ReadToEnd());
-        if (ConfigRead != null)
-          ConfigRead(cf);
+        ConfigRead?.Invoke(cf);
         return cf;
       }
     }

@@ -32,8 +32,7 @@ namespace C3Mod
       e.Killed = killed;
       e.GameType = gametype;
       e.PvPKill = pvpkill;
-      if (OnPvPDeath != null)
-        OnPvPDeath(e);
+      OnPvPDeath?.Invoke(e);
     }
 
     internal static void GameEnd(List<C3Player> winningteamplayers, List<C3Player> losingteamplayers, string gametype, int winningteamscore, int losingteamscore)
@@ -44,8 +43,7 @@ namespace C3Mod
       e.GameType = gametype;
       e.WinningTeamScore = winningteamscore;
       e.LosingTeamScore = losingteamscore;
-      if (OnGameEnd != null)
-        OnGameEnd(e);
+      OnGameEnd?.Invoke(e);
     }
 
     internal static void FlagCapture(C3Player who, string gametype, string whoscored, int capturedteamscore, int otherteamscore)
@@ -56,8 +54,7 @@ namespace C3Mod
       e.WhoScored = whoscored;
       e.CapturedTeamScore = capturedteamscore;
       e.OtherTeamScore = otherteamscore;
-      if (OnFlagCapture != null)
-        OnFlagCapture(e);
+      OnFlagCapture?.Invoke(e);
     }
 
     internal static void FlagGrabbed(C3Player who, string gametype)
@@ -65,8 +62,7 @@ namespace C3Mod
       FlagGrabbedArgs e = new FlagGrabbedArgs();
       e.Who = who;
       e.GameType = gametype;
-      if (OnFlagGrabed != null)
-        OnFlagGrabed(e);
+      OnFlagGrabed?.Invoke(e);
     }
 
     internal static void WaveAdvance(List<C3Player> aliveplayers, List<C3Player> spectatingplayers, int nextwave)
@@ -75,8 +71,7 @@ namespace C3Mod
       e.AlivePlayers = aliveplayers;
       e.SpectatingPlayers = spectatingplayers;
       e.NextWave = nextwave;
-      if (OnApocWaveAdvance != null)
-        OnApocWaveAdvance(e);
+      OnApocWaveAdvance?.Invoke(e);
     }
 
     internal static void VoteEvent(C3Player player, bool vote, bool join, string gametype)
