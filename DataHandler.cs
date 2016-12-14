@@ -84,7 +84,7 @@ namespace C3Mod
 
 			if (player.SpawnProtectionEnabled)
 			{
-				NetMessage.SendData(4, -1, PlayerID, player.PlayerName, PlayerID, 0f, 0f, 0f, 0);
+				NetMessage.SendData(4, -1, PlayerID, player.PlayerName, PlayerID);
 				return true;
 			}
 

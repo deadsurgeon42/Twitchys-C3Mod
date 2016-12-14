@@ -220,8 +220,7 @@ namespace C3Mod.GameTypes
 								if (!Main.player[player.Index].hostile)
 								{
 									Main.player[player.Index].hostile = true;
-									NetMessage.SendData((int) PacketTypes.TogglePvp, -1, -1, "", player.Index, 0f, 0f,
-										0f);
+									NetMessage.SendData((int) PacketTypes.TogglePvp, -1, -1, "", player.Index);
 								}
 
 								//Respawn on flag
@@ -245,8 +244,7 @@ namespace C3Mod.GameTypes
 										TShock.Players[player.Index].Teleport((int) TDMSpawns[0].X * 16, (int) TDMSpawns[0].Y * 16);
 									else if (player.Team == 8)
 										TShock.Players[player.Index].Teleport((int) TDMSpawns[1].X * 16, (int) TDMSpawns[1].Y * 16);
-									NetMessage.SendData(4, -1, player.Index, player.PlayerName, player.Index, 0f, 0f, 0f,
-										0);
+									NetMessage.SendData(4, -1, player.Index, player.PlayerName, player.Index);
 									if (C3Mod.C3Config.TPLockEnabled)
 										player.TSPlayer.TpLock = true;
 								}
@@ -384,7 +382,7 @@ namespace C3Mod.GameTypes
 				{
 					C3Mod.C3Players[i].TSPlayer.TpLock = false;
 					Main.player[C3Mod.C3Players[i].Index].hostile = pvpstate;
-					NetMessage.SendData(30, -1, -1, "", C3Mod.C3Players[i].Index, 0f, 0f, 0f);
+					NetMessage.SendData(30, -1, -1, "", C3Mod.C3Players[i].Index);
 					TShock.Players[C3Mod.C3Players[i].Index].SetTeam(0);
 					TShock.Players[C3Mod.C3Players[i].Index].Spawn();
 				}
@@ -392,7 +390,7 @@ namespace C3Mod.GameTypes
 				{
 					C3Mod.C3Players[i].TSPlayer.TpLock = false;
 					Main.player[C3Mod.C3Players[i].Index].hostile = pvpstate;
-					NetMessage.SendData(30, -1, -1, "", C3Mod.C3Players[i].Index, 0f, 0f, 0f);
+					NetMessage.SendData(30, -1, -1, "", C3Mod.C3Players[i].Index);
 					TShock.Players[C3Mod.C3Players[i].Index].SetTeam(0);
 					TShock.Players[C3Mod.C3Players[i].Index].Spawn();
 				}
