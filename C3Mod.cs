@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using Microsoft.Xna.Framework;
 using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
@@ -11,7 +12,7 @@ using TShockAPI.DB;
 
 namespace C3Mod
 {
-  [ApiVersion(1, 26)]
+  [ApiVersion(2, 00)]
   public class C3Mod : TerrariaPlugin
   {
     public static List<C3Player> C3Players = new List<C3Player>();

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
 using Terraria;
 using TShockAPI;
 using TShockAPI.DB;

@@ -20,6 +20,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Streams;
+using Microsoft.Xna.Framework;
 using Terraria;
 using TShockAPI;
 
