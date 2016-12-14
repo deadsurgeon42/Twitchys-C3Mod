@@ -18,7 +18,6 @@ namespace C3Mod
     public static List<C3Player> C3Players = new List<C3Player>();
     internal static SqlTableEditor SQLEditor;
     internal static SqlTableCreator SQLWriter;
-    internal static readonly Version VersionNum = Assembly.GetExecutingAssembly().GetName().Version;
 
     public C3Mod(Main game)
         : base(game)
@@ -36,9 +35,10 @@ namespace C3Mod
 
     public override string Description => "Game modes plugin for TShock";
 
-    public override Version Version => VersionNum;
+	  public override Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
-    public override void Initialize()
+
+		public override void Initialize()
     {
       C3Tools.SetupConfig();
 

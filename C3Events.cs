@@ -9,7 +9,7 @@ namespace C3Mod
 
   public delegate void FlagCaptureHandler(FlagCaptureArgs e);
 
-  public delegate void FlagGabbedHandler(FlagGrabbedArgs e);
+  public delegate void FlagGrabbedHandler(FlagGrabbedArgs e);
 
   public delegate void ApocalypseWaveAdvanceHandler(ApocalypseWaveAdvanceArgs e);
 
@@ -21,7 +21,7 @@ namespace C3Mod
 
     public static event FlagCaptureHandler OnFlagCapture;
 
-    public static event FlagGabbedHandler OnFlagGrabed;
+    public static event FlagGrabbedHandler OnFlagGrabed;
 
     public static event ApocalypseWaveAdvanceHandler OnApocWaveAdvance;
 
