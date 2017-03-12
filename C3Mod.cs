@@ -30,6 +30,17 @@ namespace C3Mod
 		public static bool VoteRunning { get; set; }
 		public static string VoteType { get; set; }
 
+		public Team[] Teams { get; } = {
+			null,
+			new Team("Red", 1, Color.Red),
+			new Team("Green", 2, Color.Green),
+			new Team("Blue", 3, Color.Blue),
+			new Team("Yellow", 4, Color.Yellow),
+			new Team("Pink", 5, Color.Pink)
+		};
+
+		public Team Team1, Team2;
+
 		public override string Name => "C3Mod";
 		public override string Author => "Twitchy, Olink and various contributors";
 
@@ -41,6 +52,9 @@ namespace C3Mod
 		public override void Initialize()
 		{
 			C3Tools.SetupConfig();
+
+			Team1 = Teams[C3Config.TeamColor1];
+			Team2 = Teams[C3Config.TeamColor2];
 
 			if (C3Config.CTFEnabled)
 				ServerApi.Hooks.GameUpdate.Register(this, CTF.OnUpdate);
@@ -92,8 +106,10 @@ namespace C3Mod
 
 		internal void OnInitialize(EventArgs args)
 		{
-			if ((C3Config.TeamColor1 < 1) || (C3Config.TeamColor1 > 5) || (C3Config.TeamColor1 == C3Config.TeamColor2) ||
-			    (C3Config.TeamColor2 > 5) || (C3Config.TeamColor2 < 1))
+			Team firstTeam = Teams[1];
+			Team lastTeam = Teams[Teams.Length - 1];
+			if ((C3Config.TeamColor1 < firstTeam.Index) || (C3Config.TeamColor1 > lastTeam.Index) || (C3Config.TeamColor1 == C3Config.TeamColor2) ||
+			    (C3Config.TeamColor2 > lastTeam.Index) || (C3Config.TeamColor2 < firstTeam.Index))
 				throw new Exception("Team Colours are inccorectly set up. Check c3config.json");
 
 			SQLEditor = new SqlTableEditor(TShock.DB,
@@ -159,6 +175,8 @@ namespace C3Mod
 			//Converted v2.2
 
 			#region AddCommands
+
+			Commands.ChatCommands.Add(new Command(CommandHandler.Handle, "c3mod", "c3admin"));
 
 			switch (C3Config.TeamColor1)
 			{

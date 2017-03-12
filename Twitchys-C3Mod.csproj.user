@@ -10,8 +10,8 @@
     <ReferencePath>D:\Software\TShock\_reference\</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartProgram>D:\Software\TShock\TerrariaServer.exe</StartProgram>
-    <StartWorkingDirectory>D:\Software\TShock</StartWorkingDirectory>
+    <StartProgram>C:\Users\ds42\Documents\Projects\_tshock\TerrariaServer.exe</StartProgram>
+    <StartWorkingDirectory>C:\Users\ds42\Documents\Projects\_tshock\</StartWorkingDirectory>
     <StartArguments>-world test.wld</StartArguments>
     <StartAction>Program</StartAction>
   </PropertyGroup>
